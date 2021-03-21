@@ -1,3 +1,9 @@
+
+$gradient-color-1: rgba(233, 184, 93, 0.75);
+$gradient-color-2: rgba(238, 247, 159, 0.75);
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -30,16 +36,17 @@ body {
 }
 
 .picture {
+
+  img {
+    width: 20rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+  }
+
   min-height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.picture img {
-  width: 20rem;
-  z-index: 2;
-  transition: all 0.75s ease-out;
 }
 
 .circle {
@@ -47,23 +54,26 @@ body {
   height: 15rem;
   background: linear-gradient(
     to right,
-    rgba(233, 184, 93, 0.75),
-    rgba(238, 247, 159, 0.75)
+    $gradient-color-1,
+    $gradient-color-2
   );
   position: absolute;
   border-radius: 50%;
   z-index: 1;
 }
 
-.info h1 {
-  font-size: 3rem;
-  transition: all 0.75s ease-out;
-}
+.info {
 
-.info p {
-  font-size: 1.3rem;
-  padding: 2rem 0rem;
-  color: #585858;
-  font-weight: lighter;
-  transition: all 0.75s ease-out;
+  h1 {
+    font-size: 3rem;
+    transition: all 0.75s ease-out;
+  }
+
+  p {
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #585858;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+  }
 }

@@ -1,5 +1,6 @@
 import token from './token.json'
 import './animation'
+import './style.scss'
 
 const city = '629634'; // Brest id
 const url = `http://api.openweathermap.org/data/2.5/weather?id=${city}&appid=${token}`;
