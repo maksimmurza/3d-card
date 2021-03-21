@@ -1,7 +1,7 @@
-## Playground for learning tools
+# Playground
 
-npm run build
+ 👉 Initial code from [3d-card-effect](https://github.com/developedbyed/3d-card-effect) by [developedbyed](https://github.com/developedbyed/)
 
-open index.html
+🚀 `npm start`
 
 ![3D-effect](./public/how-it-works.gif)
